@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ESP IOT CARJAVI DASHBOARD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="topnav">
+      <h1>ESP AsyncWebServer</h1>
+    </div>
+
+    <div class="content">
+      <div class="card-grid">
+        <div class="card">
+          <p class="card-title">ADC Pot</p>
+          <div class="Centrado">
+            <p  id="temp" style="font-size:50px">Valor</p>
+          </div>
+        </div>
+        <div class="card">
+          <p class="card-title">Buttons</p>
+          <a href="/led2on"><button class="button">ON </button></a>
+          <a href="/led2off"><button class="button button2">OFF</button></a>
+        </div>
+        <div class="card">
+          <p class="card-title">Counter</p>
+          <p align="center" id="humi" style="font-size:50px">Count</p>
+          <a href="/reset"><button class="button">Reset</button></a>
+        </div>
+        <div class="card">
+          <p class="card-title">Time</p>
+          <p style="font-size:20px" id="time">Date/time</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
